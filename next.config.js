@@ -7,11 +7,11 @@ const nextConfig = {
         // matching all API routes
         source: "/api/:path*",
         headers: [
-          // { key: "Access-Control-Allow-Credentials", value: "true" },
+          // { key: "Access-Control-Allow-Credentials", value: "true" }, // Optional for credentials
           {
             key: "Access-Control-Allow-Origin",
-            value: "https://minecraftle.app",
-          }, // replace this your actual origin
+            value: "https://minecraftle.app", // Replace with actual diffle.org domain
+          },
           {
             key: "Access-Control-Allow-Methods",
             value: "GET,DELETE,PATCH,POST,PUT,OPTIONS",
@@ -23,7 +23,7 @@ const nextConfig = {
           },
         ],
       },
-   Remove this line to allow embedding on diffle.org
+      // Optional: Remove this line to allow embedding on diffle.org
       // {
       //   source: "/:path*",
       //   headers: [
