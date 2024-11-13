@@ -7,11 +7,11 @@ const nextConfig = {
         // matching all API routes
         source: "/api/:path*",
         headers: [
-          // { key: "Access-Control-Allow-Credentials", value: "true" }, // Optional for credentials
+          // { key: "Access-Control-Allow-Credentials", value: "true" },
           {
             key: "Access-Control-Allow-Origin",
             value: "https://minecraftle.app",
-          },
+          }, // replace this your actual origin
           {
             key: "Access-Control-Allow-Methods",
             value: "GET,DELETE,PATCH,POST,PUT,OPTIONS",
@@ -24,12 +24,11 @@ const nextConfig = {
         ],
       },
       {
-        // Allow embedding from minecraftle.app
         source: "/:path*",
         headers: [
           {
             key: "X-Frame-Options",
-            value: "ALLOW-FROM https://minecraftle.app",
+            value: "https://minecraftle.app",
           },
         ],
       },
