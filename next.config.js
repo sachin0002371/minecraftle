@@ -28,7 +28,7 @@ const nextConfig = {
         headers: [
           {
             key: "X-Frame-Options",
-            value: "https://minecraftle.app",
+            value: "SAMEORIGIN",
           },
         ],
       },
