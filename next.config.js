@@ -10,7 +10,7 @@ const nextConfig = {
           // { key: "Access-Control-Allow-Credentials", value: "true" },
           {
             key: "Access-Control-Allow-Origin",
-            value: "http://minecraftle.app",
+            value: "https://minecraftle.app",
           }, // replace this your actual origin
           {
             key: "Access-Control-Allow-Methods",
