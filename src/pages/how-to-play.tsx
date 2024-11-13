@@ -40,36 +40,7 @@ export default function HowToPlay() {
           </Link>
         </p>
       </div>
-      <div className="box inv-background">
-        <h2>About</h2>
-        <p>
-          Originally created by Tamura Boog, Zach Manson, Harrison Oates, Ivan
-          Sossa Gongora in 2022. Other contributors can be seen on the GitHub
-          repo.
-        </p>
-        <p>
-          Built originally Flask, recently rebuilt with Next.js and React.
-          <br />
-          Source code:{" "}
-          <a
-            href="https://github.com/pavo-etc/minecraftle"
-            className="text-blue-700"
-          >
-            GitHub
-          </a>
-        </p>
-        <p>
-          Hosted by{" "}
-          <a href="https://zachmanson.com" className="text-blue-700">
-            Zach Manson
-          </a>
-          . If you are reading this please{" "}
-          <a href="mailto:zachpmanson@gmail.com" className="text-blue-700">
-            email me
-          </a>{" "}
-          and tell me how you found the site since I haven&apos;t a clue.
-        </p>
-      </div>
+    
     </main>
   );
 }
