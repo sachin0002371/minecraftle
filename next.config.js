@@ -23,15 +23,16 @@ const nextConfig = {
           },
         ],
       },
-      {
-        source: "/:path*",
-        headers: [
-          {
-            key: "X-Frame-Options",
-            value: "SAMEORIGIN",
-          },
-        ],
-      },
+   Remove this line to allow embedding on diffle.org
+      // {
+      //   source: "/:path*",
+      //   headers: [
+      //     {
+      //       key: "X-Frame-Options",
+      //       value: "SAMEORIGIN",
+      //     },
+      //   ],
+      // },
     ];
   },
 };
