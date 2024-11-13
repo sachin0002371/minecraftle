@@ -10,7 +10,7 @@ const nextConfig = {
           // { key: "Access-Control-Allow-Credentials", value: "true" }, // Optional for credentials
           {
             key: "Access-Control-Allow-Origin",
-            value: "https://minecraftle.app", // Replace with actual diffle.org domain
+            value: "https://minecraftle.app",
           },
           {
             key: "Access-Control-Allow-Methods",
@@ -23,7 +23,16 @@ const nextConfig = {
           },
         ],
       },
-     
+      {
+        // Allow embedding from minecraftle.app
+        source: "/:path*",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "ALLOW-FROM https://minecraftle.app",
+          },
+        ],
+      },
     ];
   },
 };
